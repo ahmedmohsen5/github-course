@@ -10,3 +10,16 @@ jobs:
           run: |
                 node -v
                 npm -v
+  Parallel-Job:
+    runs-on: macos-latest
+    steps:
+      - name: View SW version
+        run: sw_vers
+  depandent-job:
+    needs: [Run-Shell-command]
+    runs-on: windows-latest
+    steps:
+      - name: echo String
+        run: Wite-Host "Hello from Windows"
+      - name: Error Step
+        run: doesnotexist
