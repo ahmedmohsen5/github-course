@@ -20,6 +20,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: echo String
-        run: Wite-Host "Hello from Windows"
+        run: write-Host "Hello from Windows"
       - name: Error Step
         run: doesnotexist
