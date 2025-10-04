@@ -22,4 +22,4 @@ jobs:
       - name: echo String
         run: write-Host "Hello from Windows"
       - name: Error Step
-        run: doesnotexits
+        run: write-Host "test Error"
