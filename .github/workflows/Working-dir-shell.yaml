@@ -35,4 +35,4 @@ jobs:
             - name: python shell
               run: |
                     import platform
-                    print(platform.process())            
+                    print(platform.processor())            
