@@ -33,6 +33,7 @@ jobs:
                     echo ${env:GITHUB_REPOSITORY}
                     echo ${env:GITHUB_WORKSPACE}
             - name: python shell
+              shell: python
               run: |
                     import platform
                     print(platform.processor())            
