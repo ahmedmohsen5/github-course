@@ -16,3 +16,14 @@ jobs:
               run: echo "::debug title= Debug title,file=app.js,line=1,endline=3,col=5,endColumn=7::Missing semicolon"
             - name: Setting Notify in file app.js massage In course
               run: echo "::notice title= Notice title,file=app.js,line=1,endline=3,col=5,endColumn=7::Missing semicolon"
+            - name: group of log
+              run: |
+                    echo "::group::My log"
+                    echo "log 1"
+                    echo "log 2"
+                    echo "::endgroup::"
+            - name: Masking a value
+              run: |
+                    echo "::add-mask::MY_SECRET"
+            - name: echo the secret Value
+              run: echo "MY_SECRET"
