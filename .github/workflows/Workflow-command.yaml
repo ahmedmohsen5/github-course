@@ -1,0 +1,9 @@
+name: Workflow command
+on: [push]
+jobs:
+    Test-WF-Command:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Setting error massage
+              run: echo "::error::Missing semicolon"
+              
