@@ -6,4 +6,13 @@ jobs:
         steps:
             - name: Setting error massage
               run: echo "::error::Missing semicolon"
-              
+            - name: Setting Error in file app.js massage
+              run: echo "::error file=app.js,line=1,col=1::Missing semicolon"
+            - name: Setting Error in file app.js massage In course
+              run: echo "::error title= Error title,file=app.js,line=1,endline=3,col=5,endColumn=7::Missing semicolon"
+            - name: Setting Warning in file app.js massage In course
+              run: echo "::warning title= Warning title,file=app.js,line=1,endline=3,col=5,endColumn=7::Missing semicolon"
+            - name: Setting debug in file app.js massage In course
+              run: echo "::debug title= Debug title,file=app.js,line=1,endline=3,col=5,endColumn=7::Missing semicolon"
+            - name: Setting Notify in file app.js massage In course
+              run: echo "::notice title= Notice title,file=app.js,line=1,endline=3,col=5,endColumn=7::Missing semicolon"
