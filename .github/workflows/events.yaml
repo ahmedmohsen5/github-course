@@ -5,8 +5,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: |
-                    echo $github.sha
-                    echo $github.ref
+                    echo $GITHUB_SHA
+                    echo $GITHUB_REF
             - uses: actions/checkout@v3
-            
+
 
