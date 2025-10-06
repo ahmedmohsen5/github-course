@@ -1,0 +1,12 @@
+name: repository events
+on: [push, pull_request,issues]
+jobs:
+    checkout-test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                    echo $github.sha
+                    echo $github.ref
+            - uses: actions/checkout@v3
+            
+
