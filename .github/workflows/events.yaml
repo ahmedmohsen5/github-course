@@ -1,5 +1,5 @@
 name: repository events
-on: [push, pull_request,issues]
+on: push
 jobs:
     checkout-test:
         runs-on: ubuntu-latest
