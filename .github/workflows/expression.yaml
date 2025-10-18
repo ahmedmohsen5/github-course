@@ -14,11 +14,11 @@ jobs:
                 echo ${{ 1 > 2 }}
                 echo ${{ 'string' == 'string' }}
                 echo ${{ true || (false && true) }}
-            #- name: Dump of context
-            #  run: |
-            #    echo ${{toJson(github)}}
-            #    echo ${{toJson(job)}}
-            #    echo ${{toJson(secrets)}}
-            #    echo ${{toJson(steps)}}
-            #    echo ${{toJson(runner)}}
+            - name: Dump of context
+              run: |
+                echo ${{toJson(github)}}
+                echo ${{toJson(job)}}
+                echo ${{toJson(secrets)}}
+                echo ${{toJson(steps)}}
+                echo ${{toJson(runner)}}
                 
